@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammed Aflah P P — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Kalam:wght@300;400;700&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="port-folio.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">aflah.dev</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#skills" onclick="closeMobile()">Skills</a>
+      <a href="#experience" onclick="closeMobile()">Experience</a>
+      <a href="#projects" onclick="closeMobile()">Projects</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <section id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-label">
+              <i class="fa-solid fa-circle-check"></i>
+              Available for opportunities
+            </div>
+
+            <h1 class="hero-name">
+              Muhammed<br />
+              <em>Aflah P P</em>
+            </h1>
+
+            <p class="hero-role">
+              <i class="fa-solid fa-code"></i>
+              Full Stack Developer
+            </p>
+
+            <p class="hero-tagline">
+              I build clean, fast web products that solve real problems — React
+              on the front, Django on the back, and zero tolerance for sloppy
+              code.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fa-solid fa-folder-open"></i>
+                View Projects
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fa-solid fa-briefcase"></i>
+                Hire Me
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <a href="https://github.com/aflah-pp" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+
+              <span style="color: var(--line)">·</span>
+
+              <a href="https://instagram.com/afl_4h" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+
+              <span style="color: var(--line)">·</span>
+              <a
+                href="https://linkedin.com/in/muhammed-aflahpp"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>Linkedin
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-card-wrap">
+            <div class="hero-card">
+              <div class="tape tape-tl"></div>
+              <div class="tape tape-tr"></div>
+
+              <h3>
+                <i class="fa-solid fa-clipboard-list"></i>
+                Quick Snapshot
+              </h3>
+
+              <div class="stat-row">
+                <div class="stat-item">
+                  <div class="stat-num">3+</div>
+                  <div class="stat-label">Projects Shipped</div>
+                </div>
+
+                <div class="stat-item">
+                  <div class="stat-num">1</div>
+                  <div class="stat-label">Freelance Client</div>
+                </div>
+
+                <div class="stat-item">
+                  <div class="stat-num">∞</div>
+                  <div class="stat-label">Lines Debugged</div>
+                </div>
+              </div>
+
+              <div
+                style="
+                  border-top: 1.5px dashed var(--line);
+                  padding-top: 16px;
+                  margin-top: 4px;
+                "
+              >
+                <p
+                  style="
+                    font-family: &quot;Caveat&quot;, cursive;
+                    font-size: 14px;
+                    color: var(--ink3);
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                  "
+                >
+                  Core Tech Stack
+                </p>
+
+                <div class="tech-chips">
+                  <span class="chip chip-react">ReactJS</span>
+                  <span class="chip chip-django">Django REST</span>
+                  <span class="chip chip-pg">PostgreSQL</span>
+                  <span class="chip chip-tw">TailwindCSS</span>
+                  <span class="chip chip-js">JavaScript</span>
+                  <span class="chip chip-py">Python</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-num">01 /</span>
+          <h2><span>About Me</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="notebook-card reveal">
+            <p>
+              Hey — I'm Aflah. A Full Stack Developer from Kerala who genuinely
+              enjoys the craft of building software. Not just shipping features,
+              but writing code that actually makes sense six months later.
+            </p>
+            <p>
+              I studied B.Com with Computer Applications at NAHER Arts & Science
+              College, then went deep into modern full-stack development through
+              TALROP's intensive program. That combination — business thinking +
+              technical depth — is how I approach every project.
+            </p>
+            <p>
+              Right now I'm at Yuai Soft Solutions building production-level
+              frontend components and backend services in an Agile environment.
+              Before that, I shipped a complete desktop time-tracking app
+              (TimeLogger) for a freelance client — from zero to deployed, solo.
+            </p>
+            <p>
+              My philosophy: keep it simple, keep it clean, ship it working.
+              Fancy architecture that nobody can maintain is a bug, not a
+              feature.
+            </p>
+          </div>
+          <div class="about-facts reveal">
+            <div class="fact-card">
+              <h4>
+                <i class="fa-solid fa-laptop-code"></i>
+                Current Focus
+              </h4>
+              <p>
+                Production-level full-stack development at Yuai Soft Solutions.
+                Working in Agile, doing real code reviews, fixing real
+                production bugs.
+              </p>
+            </div>
+
+            <div class="fact-card">
+              <h4>
+                <i class="fa-solid fa-graduation-cap"></i>
+                Background
+              </h4>
+              <p>
+                B.Com in Computer Applications + intensive full-stack training.
+                Business logic meets engineering discipline — rare combo.
+              </p>
+            </div>
+
+            <div class="fact-card">
+              <h4>
+                <i class="fa-solid fa-bullseye"></i>
+                Philosophy
+              </h4>
+              <p>
+                "Simple, efficient code that solves real problems." No
+                over-engineering. No unnecessary abstraction. Just code that
+                works.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-num">02 /</span>
+          <h2><span>Skills</span></h2>
+        </div>
+
+        <div class="skills-board">
+          <div class="skill-group reveal">
+            <div class="skill-group-title">
+              <span class="skill-group-icon">
+                <i class="fa-solid fa-code"></i>
+              </span>
+              Frontend
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">ReactJS</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">TailwindCSS</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">MUI</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">
+              <span class="skill-group-icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </span>
+              Backend
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">Django REST</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">JWT Auth</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">
+              <span class="skill-group-icon">
+                <i class="fa-solid fa-database"></i>
+              </span>
+              Database
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">SQLite</span>
+              <span class="skill-tag">Supabase</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">
+              <span class="skill-group-icon">
+                <i class="fa-solid fa-gears"></i>
+              </span>
+              Tools & DevOps
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Render</span>
+              <span class="skill-tag">Vercel</span>
+              <span class="skill-tag">Netlify</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">
+              <span class="skill-group-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </span>
+              Desktop / Other
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">ElectronJS</span>
+              <span class="skill-tag">Cloudinary</span>
+              <span class="skill-tag">AI API Integration</span>
+              <span class="skill-tag">Supabase</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">
+              <span class="skill-group-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </span>
+              Soft Skills
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Critical Thinking</span>
+              <span class="skill-tag">Agile / Scrum</span>
+              <span class="skill-tag">Code Review</span>
+              <span class="skill-tag">Adaptability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-num">03 /</span>
+          <h2><span>Experience</span></h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <div class="timeline-company">Yuai Soft Solutions</div>
+                  <div class="timeline-role">Full Stack Developer</div>
+                </div>
+                <div class="timeline-date">
+                  Dec 2025 — Present
+                  <i class="fa-solid fa-circle" style="color: #22c55e"></i>
+                </div>
+              </div>
+              <div class="timeline-stack">
+                React · Django REST · Agile · Code Review · RESTful Services
+              </div>
+              <ul class="timeline-list">
+                <li>
+                  Architecting frontend UI components and backend services for
+                  production-level full-stack solutions
+                </li>
+                <li>
+                  Working in Agile environment alongside senior leads — shipping
+                  code, troubleshooting production issues, peer code reviews
+                </li>
+                <li>
+                  Ensuring application stability through bug fixes, performance
+                  monitoring, and code refactoring
+                </li>
+                <li>
+                  Implementing RESTful services and modern libraries for robust,
+                  future-proof features
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <div class="timeline-company">TimeLogger</div>
+                  <div class="timeline-role">
+                    Freelance Full Stack Developer
+                  </div>
+                </div>
+                <div class="timeline-date">2024 — 2025</div>
+              </div>
+              <div class="timeline-stack">
+                ReactJS · ElectronJS · Django · Supabase · GitHub Actions ·
+                Render
+              </div>
+              <ul class="timeline-list">
+                <li>
+                  Built and deployed a cross-platform time tracking desktop app
+                  for a freelance client — solo, end-to-end
+                </li>
+                <li>
+                  Built responsive ReactJS frontend with real-time state
+                  management; converted to desktop using ElectronJS
+                </li>
+                <li>
+                  Automated build and release pipelines via GitHub Actions;
+                  deployed Django backend on Render with Supabase
+                </li>
+                <li>
+                  Delivered full deployment setup and client handover —
+                  real-world experience in production app delivery
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <div class="timeline-company">TALROP</div>
+                  <div class="timeline-role">
+                    Full Stack Developer — Training & Certification
+                  </div>
+                </div>
+                <div class="timeline-date">2023 — 2024</div>
+              </div>
+              <div class="timeline-stack">
+                HTML · CSS · JavaScript · React · Django REST · PostgreSQL · Git
+              </div>
+              <ul class="timeline-list">
+                <li>
+                  Completed intensive modern full-stack development training and
+                  earned certification
+                </li>
+                <li>
+                  Built multiple real-world projects covering the complete stack
+                  from frontend to database
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-num">04 /</span>
+          <h2><span>Projects</span></h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="project-pin"></div>
+            <div class="project-type type-freelance">
+              <i class="fa-regular fa-clock"></i> Freelance
+            </div>
+            <h3 class="project-title">TimeLogger</h3>
+            <p class="project-desc">
+              A cross-platform desktop time tracking application built for a
+              real client. Logs work sessions, tracks productivity stats, and
+              runs natively on Windows, Mac, and Linux as a proper desktop app —
+              not just a web view.
+            </p>
+            <div class="project-achievement">
+              <i class="fa-solid fa-check"></i>
+              Delivered production-ready to a paying client
+            </div>
+            <div class="project-stack">
+              <span class="stack-tag">ReactJS</span>
+              <span class="stack-tag">ElectronJS</span>
+              <span class="stack-tag">Django</span>
+              <span class="stack-tag">Supabase</span>
+              <span class="stack-tag">GitHub Actions</span>
+              <span class="stack-tag">Render</span>
+            </div>
+            <!-- <div class="project-links">
+             
+            </div> -->
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-pin"></div>
+            <div class="project-type type-personal">
+              <i class="fa-solid fa-user-gear"></i> Saas
+            </div>
+            <h3 class="project-title">N-Drive</h3>
+            <p class="project-desc">
+              A full-stack cloud-like file manager. Users can securely upload,
+              organise, share, and download files. Includes AI chat assistant,
+              image generation, JWT auth, subscription plans, and mock payment
+              flow.
+            </p>
+            <div class="project-achievement">
+              <i class="fa-solid fa-robot"></i>
+              AI Features Integrated (Chat + Image Generation)
+            </div>
+            <div class="project-stack">
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Django REST</span>
+              <span class="stack-tag">TailwindCSS</span>
+              <span class="stack-tag">SQLite</span>
+              <span class="stack-tag">JWT</span>
+              <span class="stack-tag">AI API</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://n-drive-app.netlify.app/"
+                target="_blank"
+                class="btn btn-primary"
+                >🌐 Live Demo</a
+              >
+              <a
+                href="https://github.com/aflah-pp/N-Drive"
+                target="_blank"
+                class="btn btn-secondary"
+                >⌥ GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-pin"></div>
+            <div class="project-type type-fullstack">
+              <i class="fa-solid fa-cart-shopping"></i> E-Commerce
+            </div>
+            <h3 class="project-title">Cartify</h3>
+            <p class="project-desc">
+              A complete e-commerce platform. Responsive product listings, cart
+              management, order processing, and media uploaded to Cloudinary.
+              The whole nine yards — not another todo app.
+            </p>
+            <div class="project-achievement">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Full E-Commerce Flow, End-to-End
+            </div>
+            <div class="project-stack">
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Django REST</span>
+              <span class="stack-tag">SQLite</span>
+              <span class="stack-tag">Tailwind CSS</span>
+              <span class="stack-tag">Cloudinary</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://app-cartify.netlify.app/"
+                target="_blank"
+                class="btn btn-primary"
+                >🌐 Live Demo</a
+              >
+              <a
+                href="https://github.com/aflah-pp/Cartify"
+                target="_blank"
+                class="btn btn-secondary"
+                >⌥ GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-num">05 /</span>
+          <h2><span>By the Numbers</span></h2>
+        </div>
+        <div class="achievements-grid">
+          <div class="achievement-card reveal">
+            <div class="achievement-num">3+</div>
+            <div class="achievement-label">Full Stack Projects Shipped</div>
+          </div>
+          <div class="achievement-card reveal">
+            <div class="achievement-num">1</div>
+            <div class="achievement-label">
+              Production Freelance Client Delivered
+            </div>
+          </div>
+          <div class="achievement-card reveal">
+            <div class="achievement-num">6+</div>
+            <div class="achievement-label">Frameworks & Libraries Mastered</div>
+          </div>
+          <div class="achievement-card reveal">
+            <div class="achievement-num">2+</div>
+            <div class="achievement-label">Deployment Platforms Used</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-num">06 /</span>
+          <h2><span>Let's Talk</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <div class="tape tape-tl"></div>
+            <h3 class="contact-headline">
+              Let's build something <em>meaningful</em> together.
+            </h3>
+            <p class="contact-sub">
+              Open to full-time roles, freelance contracts, and interesting
+              collaborations. If you have a product idea or an open position,
+              let's talk.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:aflahpp777@gmail.com" class="contact-link">
+                <div class="contact-link-icon icon-email">✉</div>
+                <div>
+                  <div class="contact-link-text">Email me</div>
+                  <div class="contact-link-sub">aflahpp777@gmail.com</div>
+                </div>
+              </a>
+              <a
+                href="https://github.com/aflah-pp"
+                target="_blank"
+                class="contact-link"
+              >
+                <div class="contact-link-icon icon-github">⌥</div>
+                <div>
+                  <div class="contact-link-text">GitHub</div>
+                  <div class="contact-link-sub">github.com/aflah-pp</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-side reveal">
+            <div>
+              <label class="hand-label" for="msg-name">Your name</label>
+              <input
+                type="text"
+                id="msg-name"
+                class="sketch-input"
+                placeholder="e.g. Riya from Zepto"
+              />
+            </div>
+            <div>
+              <label class="hand-label" for="msg-email">Your email</label>
+              <input
+                type="email"
+                id="msg-email"
+                class="sketch-input"
+                placeholder="riya@company.com"
+              />
+            </div>
+            <div>
+              <label class="hand-label" for="msg-body"
+                >What's on your mind?</label
+              >
+              <textarea
+                id="msg-body"
+                class="sketch-textarea"
+                placeholder="We have an opening / a project / an idea..."
+              ></textarea>
+            </div>
+            <button
+              class="btn btn-primary"
+              onclick="handleContact()"
+              style="width: 100%; justify-content: center; font-size: 18px"
+            >
+              ✉ Send Message
+            </button>
+            <p
+              id="form-feedback"
+              style="
+                font-family: &quot;Caveat&quot;, cursive;
+                font-size: 16px;
+                color: var(--green-dark);
+                text-align: center;
+                min-height: 24px;
+              "
+            ></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Crafted with ☕ by <strong>Muhammed Aflah P P</strong> · Kerala, India ·
+        <span id="year"></span>
+      </p>
+
+      <p class="footer-tagline">
+        Full-Stack Developer focused on building clean, scalable, and
+        user-friendly digital experiences.
+      </p>
+
+      <div class="footer-socials">
+        <a
+          href="https://github.com/aflah-pp"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a
+          href="https://linkedin.com/in/muhammed-aflahpp"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a
+          href="https://instagram.com/afl_4h"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="port-folio.js"></script>
+  </body>
+</html>
