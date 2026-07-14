@@ -1,20 +1,15 @@
 const html = document.documentElement;
 const themeBtn = document.getElementById("themeToggle");
-let dark = false;
-
-const saved = localStorage.getItem("aflah-theme");
-if (saved === "dark") {
-  dark = true;
-  html.setAttribute("data-theme", "dark");
-  themeBtn.textContent = "☀";
-}
-
 const icon = themeBtn.querySelector("i");
+
+let dark = html.getAttribute("data-theme") === "dark";
+icon.className = dark ? "fa-solid fa-sun" : "fa-solid fa-moon";
+
 themeBtn.addEventListener("click", () => {
   dark = !dark;
   html.setAttribute("data-theme", dark ? "dark" : "light");
   icon.className = dark ? "fa-solid fa-sun" : "fa-solid fa-moon";
-  localStorage.setItem("aflah-theme", dark ? "dark" : "light");
+  localStorage.setItem("theme", dark ? "dark" : "light");
 });
 
 const hamburger = document.getElementById("hamburger");
