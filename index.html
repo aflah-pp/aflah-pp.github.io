@@ -1,17 +1,12 @@
-<!doctype html>
-<html lang="en" >
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>
-    (function () {
-      const saved = localStorage.getItem("theme");
-      if (saved === "dark") {
-        document.documentElement.setAttribute("data-theme", "dark");
-      }
-    })();
-    </script>
-    <title>Muhammed Aflah P P | Muhammed Aflah PP — Full Stack Developer (React & Django)</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammed Aflah P P — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Muhammed Aflah P P | Muhammed Aflah PP — Full Stack Developer (React & Django)</title>
     <meta
       name="description"
       content="Muhammed Aflah P P (Muhammed Aflah PP) is a Full Stack Developer from Kerala, India, specializing in React, Django REST Framework, and PostgreSQL. View projects, experience, and get in touch."
@@ -95,726 +90,377 @@
         }
       }
     </script>
-  </head>
-  <body>
-    <nav id="navbar">
-      <a href="#hero" class="nav-logo">aflah.dev</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-controls">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </nav>
 
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#about" onclick="closeMobile()">About</a>
-      <a href="#skills" onclick="closeMobile()">Skills</a>
-      <a href="#experience" onclick="closeMobile()">Experience</a>
-      <a href="#projects" onclick="closeMobile()">Projects</a>
-      <a href="#contact" onclick="closeMobile()">Contact</a>
+
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<div class="stage">
+  <div class="cert">
+    <span class="tick-bl"></span><span class="tick-br"></span>
+
+    <div class="titlebar">
+      <div style="display:flex; align-items:center; gap:16px;">
+        <div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+        <div class="path mono">aflah@devfolio&nbsp;~&nbsp;<span id="pathTab">home</span></div>
+      </div>
+      <div class="titlebar-right">
+        <div class="theme-toggle" id="themeToggle">
+          <span id="toggleLabel">DARK</span>
+          <span class="toggle-knob" id="toggleKnob">☾</span>
+        </div>
+      </div>
     </div>
 
-    <section id="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div>
-            <div class="hero-label">
-              <i class="fa-solid fa-circle-check"></i>
-              Available for opportunities
-            </div>
+    <div class="cert-body">
+      <nav class="nav">
+        <div class="nav-brand">
+          <div class="name">Muhammed<br>Aflah P P</div>
+          <div class="role mono">FULL STACK DEV</div>
+        </div>
 
-            <h1 class="hero-name">
-              Muhammed<br />
-              <em>Aflah P P</em>
-            </h1>
+        <div class="nav-item active" data-tab="home"><span class="idx mono">01</span>Home</div>
+        <div class="nav-item" data-tab="skills"><span class="idx mono">02</span>Skills</div>
+        <div class="nav-item" data-tab="experience"><span class="idx mono">03</span>Experience</div>
+        <div class="nav-item" data-tab="projects"><span class="idx mono">04</span>Projects</div>
+        <div class="nav-item" data-tab="education"><span class="idx mono">05</span>Education</div>
+        <div class="nav-item" data-tab="contact"><span class="idx mono">06</span>Contact</div>
 
-            <p class="hero-role">
-              <i class="fa-solid fa-code"></i>
-              Full Stack Developer
-            </p>
+        <div class="nav-footer">
+          <a class="icon-link" href="https://github.com/aflah-pp" target="_blank" title="GitHub">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.9 10.9 0 0 1 5.8 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.6.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.68.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+          </a>
+          <a class="icon-link" href="https://aflah-pp.netlify.app/" target="_blank" title="Live site">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg>
+          </a>
+          <a class="icon-link" href="mailto:aflahpp777@gmail.com" title="Email">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          </a>
+        </div>
+      </nav>
 
-            <p class="hero-tagline">
-              I build clean, fast web products that solve real problems — React
-              on the front, Django on the back, and zero tolerance for sloppy
-              code.
-            </p>
+      <div class="content">
 
-            <div class="hero-ctas">
-              <a href="#projects" class="btn btn-primary">
-                <i class="fa-solid fa-folder-open"></i>
-                View Projects
-              </a>
-
-              <a href="#contact" class="btn btn-secondary">
-                <i class="fa-solid fa-briefcase"></i>
-                Hire Me
-              </a>
-            </div>
-
-            <div class="hero-socials">
-              <a href="https://github.com/aflah-pp" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-              </a>
-
-              <span style="color: var(--line)">·</span>
-
-              <a href="https://instagram.com/afl_4h" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-              </a>
-
-              <span style="color: var(--line)">·</span>
-              <a
-                href="https://linkedin.com/in/muhammed-aflahpp"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin"></i>Linkedin
-              </a>
-            </div>
+        <div class="panel active" data-panel="home">
+          <div class="eyebrow">whoami</div>
+          <h1 class="hero-title">Building clean, full-stack web apps that ship — not just demo.<span class="cursor"></span></h1>
+          <p class="lede">I'm a <strong>Full Stack Developer</strong> who loves building clean, responsive web apps with <strong>React</strong>, <strong>Django REST Framework</strong>, and <strong>PostgreSQL</strong>. I enjoy solving real problems with simple, efficient code. I've completed full-stack training and earned a B.Com in Computer Applications. Always curious and improving, I'm looking to work on projects that make a real impact.</p>
+          <div class="hero-meta">
+            <span class="chip">React JS</span>
+            <span class="chip">Django REST</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">TailwindCSS</span>
+            <span class="chip">Kannur, IN</span>
           </div>
+        </div>
 
-          <div class="hero-card-wrap">
-            <div class="hero-card">
-              <div class="tape tape-tl"></div>
-              <div class="tape tape-tr"></div>
+        <div class="panel" data-panel="skills">
+          <div class="eyebrow">stack.json</div>
+          <div class="section-title">Skills</div>
+          <div class="section-sub">Tools and technologies I reach for day to day.</div>
+          <div class="skills-grid">
+            <div class="skill-row"><span class="k">Primary Stack</span><div class="tag-wrap">
+              <span class="tag">ReactJS</span><span class="tag">Django REST Framework</span><span class="tag">PostgreSQL</span><span class="tag">TailwindCSS</span>
+            </div></div>
+            <div class="skill-row"><span class="k">Languages</span><div class="tag-wrap">
+              <span class="tag">HTML5</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Python</span>
+            </div></div>
+            <div class="skill-row"><span class="k">Frameworks</span><div class="tag-wrap">
+              <span class="tag">ReactJS</span><span class="tag">Django</span><span class="tag">React Native</span><span class="tag">Bootstrap</span><span class="tag">TailwindCSS</span><span class="tag">MUI</span><span class="tag">ElectronJS</span>
+            </div></div>
+            <div class="skill-row"><span class="k">Tools</span><div class="tag-wrap">
+              <span class="tag">Git</span><span class="tag">VSCode</span><span class="tag">Postman</span><span class="tag">Figma</span><span class="tag">GitHub</span><span class="tag">Render</span><span class="tag">Vercel</span><span class="tag">Netlify</span>
+            </div></div>
+            <div class="skill-row"><span class="k">Databases</span><div class="tag-wrap">
+              <span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span>
+            </div></div>
+            <div class="skill-row"><span class="k">Other</span><div class="tag-wrap">
+              <span class="tag">Problem-Solving</span><span class="tag">Critical Thinking</span><span class="tag">Adaptability</span><span class="tag">Flexibility</span><span class="tag">Teamwork</span>
+            </div></div>
+          </div>
+        </div>
 
-              <h3>
-                <i class="fa-solid fa-clipboard-list"></i>
-                Quick Snapshot
-              </h3>
-
-              <div class="stat-row">
-                <div class="stat-item">
-                  <div class="stat-num">3+</div>
-                  <div class="stat-label">Projects Shipped</div>
-                </div>
-
-                <div class="stat-item">
-                  <div class="stat-num">1</div>
-                  <div class="stat-label">Freelance Client</div>
-                </div>
-
-                <div class="stat-item">
-                  <div class="stat-num">∞</div>
-                  <div class="stat-label">Lines Debugged</div>
-                </div>
+        <div class="panel" data-panel="experience">
+          <div class="eyebrow">git log --experience</div>
+          <div class="section-title">Experience</div>
+          <div class="section-sub">Where I've applied the stack in production.</div>
+          <div class="tl">
+            <div class="tl-item">
+              <div class="tl-head">
+                <div><div class="tl-role">Full Stack Developer</div><div class="tl-org">Yuai Soft Solutions</div></div>
+                <div class="tl-date">Dec 2025 — Present</div>
               </div>
-
-              <div
-                style="
-                  border-top: 1.5px dashed var(--line);
-                  padding-top: 16px;
-                  margin-top: 4px;
-                "
-              >
-                <p
-                  style="
-                    font-family: &quot;Caveat&quot;, cursive;
-                    font-size: 14px;
-                    color: var(--ink3);
-                    margin-bottom: 10px;
-                    font-weight: 600;
-                  "
-                >
-                  Core Tech Stack
-                </p>
-
-                <div class="tech-chips">
-                  <span class="chip chip-react">ReactJS</span>
-                  <span class="chip chip-django">Django REST</span>
-                  <span class="chip chip-pg">PostgreSQL</span>
-                  <span class="chip chip-tw">TailwindCSS</span>
-                  <span class="chip chip-js">JavaScript</span>
-                  <span class="chip chip-py">Python</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-num">01 /</span>
-          <h2><span>About Me</span></h2>
-        </div>
-        <div class="about-grid">
-          <div class="notebook-card reveal">
-            <p>
-              Hey — I'm Aflah. A Full Stack Developer from Kerala who genuinely
-              enjoys the craft of building software. Not just shipping features,
-              but writing code that actually makes sense six months later.
-            </p>
-            <p>
-              I studied B.Com with Computer Applications at NAHER Arts & Science
-              College, then went deep into modern full-stack development through
-              TALROP's intensive program. That combination — business thinking +
-              technical depth — is how I approach every project.
-            </p>
-            <p>
-              Right now I'm at Yuai Soft Solutions building production-level
-              frontend components and backend services in an Agile environment.
-              Before that, I shipped a complete desktop time-tracking app
-              (TimeLogger) for a freelance client — from zero to deployed, solo.
-            </p>
-            <p>
-              My philosophy: keep it simple, keep it clean, ship it working.
-              Fancy architecture that nobody can maintain is a bug, not a
-              feature.
-            </p>
-          </div>
-          <div class="about-facts reveal">
-            <div class="fact-card">
-              <h4>
-                <i class="fa-solid fa-laptop-code"></i>
-                Current Focus
-              </h4>
-              <p>
-                Production-level full-stack development at Yuai Soft Solutions.
-                Working in Agile, doing real code reviews, fixing real
-                production bugs.
-              </p>
-            </div>
-
-            <div class="fact-card">
-              <h4>
-                <i class="fa-solid fa-graduation-cap"></i>
-                Background
-              </h4>
-              <p>
-                B.Com in Computer Applications + intensive full-stack training.
-                Business logic meets engineering discipline — rare combo.
-              </p>
-            </div>
-
-            <div class="fact-card">
-              <h4>
-                <i class="fa-solid fa-bullseye"></i>
-                Philosophy
-              </h4>
-              <p>
-                "Simple, efficient code that solves real problems." No
-                over-engineering. No unnecessary abstraction. Just code that
-                works.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-num">02 /</span>
-          <h2><span>Skills</span></h2>
-        </div>
-
-        <div class="skills-board">
-          <div class="skill-group reveal">
-            <div class="skill-group-title">
-              <span class="skill-group-icon">
-                <i class="fa-solid fa-code"></i>
-              </span>
-              Frontend
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">ReactJS</span>
-              <span class="skill-tag">React Native</span>
-              <span class="skill-tag">TailwindCSS</span>
-              <span class="skill-tag">Bootstrap</span>
-              <span class="skill-tag">MUI</span>
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">JavaScript</span>
-            </div>
-          </div>
-
-          <div class="skill-group reveal">
-            <div class="skill-group-title">
-              <span class="skill-group-icon">
-                <i class="fa-solid fa-layer-group"></i>
-              </span>
-              Backend
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Django</span>
-              <span class="skill-tag">Django REST</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">RESTful APIs</span>
-              <span class="skill-tag">JWT Auth</span>
-            </div>
-          </div>
-
-          <div class="skill-group reveal">
-            <div class="skill-group-title">
-              <span class="skill-group-icon">
-                <i class="fa-solid fa-database"></i>
-              </span>
-              Database
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">SQLite</span>
-              <span class="skill-tag">Supabase</span>
-            </div>
-          </div>
-
-          <div class="skill-group reveal">
-            <div class="skill-group-title">
-              <span class="skill-group-icon">
-                <i class="fa-solid fa-gears"></i>
-              </span>
-              Tools & DevOps
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">GitHub Actions</span>
-              <span class="skill-tag">VS Code</span>
-              <span class="skill-tag">Postman</span>
-              <span class="skill-tag">Figma</span>
-              <span class="skill-tag">Render</span>
-              <span class="skill-tag">Vercel</span>
-              <span class="skill-tag">Netlify</span>
-            </div>
-          </div>
-
-          <div class="skill-group reveal">
-            <div class="skill-group-title">
-              <span class="skill-group-icon">
-                <i class="fa-solid fa-laptop-code"></i>
-              </span>
-              Desktop / Other
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">ElectronJS</span>
-              <span class="skill-tag">Cloudinary</span>
-              <span class="skill-tag">AI API Integration</span>
-              <span class="skill-tag">Supabase</span>
-            </div>
-          </div>
-
-          <div class="skill-group reveal">
-            <div class="skill-group-title">
-              <span class="skill-group-icon">
-                <i class="fa-solid fa-lightbulb"></i>
-              </span>
-              Soft Skills
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Problem Solving</span>
-              <span class="skill-tag">Critical Thinking</span>
-              <span class="skill-tag">Agile / Scrum</span>
-              <span class="skill-tag">Code Review</span>
-              <span class="skill-tag">Adaptability</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-num">03 /</span>
-          <h2><span>Experience</span></h2>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <div class="timeline-company">Yuai Soft Solutions</div>
-                  <div class="timeline-role">Full Stack Developer</div>
-                </div>
-                <div class="timeline-date">
-                  Dec 2025 — Present
-                  <i class="fa-solid fa-circle" style="color: #22c55e"></i>
-                </div>
-              </div>
-              <div class="timeline-stack">
-                React · Django REST · Agile · Code Review · RESTful Services
-              </div>
-              <ul class="timeline-list">
-                <li>
-                  Architecting frontend UI components and backend services for
-                  production-level full-stack solutions
-                </li>
-                <li>
-                  Working in Agile environment alongside senior leads — shipping
-                  code, troubleshooting production issues, peer code reviews
-                </li>
-                <li>
-                  Ensuring application stability through bug fixes, performance
-                  monitoring, and code refactoring
-                </li>
-                <li>
-                  Implementing RESTful services and modern libraries for robust,
-                  future-proof features
-                </li>
+              <ul class="tl-list">
+                <li>Architecting frontend UI components and backend services to deliver <b>high-quality, full-stack</b> software solutions within an Agile environment.</li>
+                <li>Shipping code, troubleshooting production issues, and participating in <b>peer code reviews</b> alongside senior leads.</li>
+                <li>Ensuring application stability through consistent <b>bug fixes, performance monitoring</b>, and code refactoring.</li>
+                <li>Implementing RESTful services and modern libraries to build robust, future-proof features.</li>
               </ul>
             </div>
-          </div>
-
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <div class="timeline-company">TimeLogger</div>
-                  <div class="timeline-role">
-                    Freelance Full Stack Developer
-                  </div>
-                </div>
-                <div class="timeline-date">2024 — 2025</div>
+            <div class="tl-item">
+              <div class="tl-head">
+                <div><div class="tl-role">TimeLogger</div><div class="tl-org">Freelance Project</div></div>
+                <div class="tl-date">ReactJS · ElectronJS · Django · Supabase</div>
               </div>
-              <div class="timeline-stack">
-                ReactJS · ElectronJS · Django · Supabase · GitHub Actions ·
-                Render
-              </div>
-              <ul class="timeline-list">
-                <li>
-                  Built and deployed a cross-platform time tracking desktop app
-                  for a freelance client — solo, end-to-end
-                </li>
-                <li>
-                  Built responsive ReactJS frontend with real-time state
-                  management; converted to desktop using ElectronJS
-                </li>
-                <li>
-                  Automated build and release pipelines via GitHub Actions;
-                  deployed Django backend on Render with Supabase
-                </li>
-                <li>
-                  Delivered full deployment setup and client handover —
-                  real-world experience in production app delivery
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <div class="timeline-company">TALROP</div>
-                  <div class="timeline-role">
-                    Full Stack Developer — Training & Certification
-                  </div>
-                </div>
-                <div class="timeline-date">2023 — 2024</div>
-              </div>
-              <div class="timeline-stack">
-                HTML · CSS · JavaScript · React · Django REST · PostgreSQL · Git
-              </div>
-              <ul class="timeline-list">
-                <li>
-                  Completed intensive modern full-stack development training and
-                  earned certification
-                </li>
-                <li>
-                  Built multiple real-world projects covering the complete stack
-                  from frontend to database
-                </li>
+              <ul class="tl-list">
+                <li>Built and deployed a <b>cross-platform time tracking app</b> for a freelance client to log work sessions and productivity stats.</li>
+                <li>Built the frontend in ReactJS with clean UI and state management for <b>real-time updates</b>.</li>
+                <li>Converted the web app into a desktop app using <b>ElectronJS</b>, automating build/release pipelines via GitHub Actions.</li>
+                <li>Designed and deployed the Django backend on Render, integrating <b>Supabase</b>; delivered full client handover.</li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section id="projects">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-num">04 /</span>
-          <h2><span>Projects</span></h2>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card reveal">
-            <div class="project-pin"></div>
-            <div class="project-type type-freelance">
-              <i class="fa-regular fa-clock"></i> Freelance
-            </div>
-            <h3 class="project-title">TimeLogger</h3>
-            <p class="project-desc">
-              A cross-platform desktop time tracking application built for a
-              real client. Logs work sessions, tracks productivity stats, and
-              runs natively on Windows, Mac, and Linux as a proper desktop app —
-              not just a web view.
-            </p>
-            <div class="project-achievement">
-              <i class="fa-solid fa-check"></i>
-              Delivered production-ready to a paying client
-            </div>
-            <div class="project-stack">
-              <span class="stack-tag">ReactJS</span>
-              <span class="stack-tag">ElectronJS</span>
-              <span class="stack-tag">Django</span>
-              <span class="stack-tag">Supabase</span>
-              <span class="stack-tag">GitHub Actions</span>
-              <span class="stack-tag">Render</span>
-            </div>
-            <!-- <div class="project-links">
-             
-            </div> -->
-          </div>
-
-          <div class="project-card reveal">
-            <div class="project-pin"></div>
-            <div class="project-type type-personal">
-              <i class="fa-solid fa-user-gear"></i> Saas
-            </div>
-            <h3 class="project-title">N-Drive</h3>
-            <p class="project-desc">
-              A full-stack cloud-like file manager. Users can securely upload,
-              organise, share, and download files. Includes AI chat assistant,
-              image generation, JWT auth, subscription plans, and mock payment
-              flow.
-            </p>
-            <div class="project-achievement">
-              <i class="fa-solid fa-robot"></i>
-              AI Features Integrated (Chat + Image Generation)
-            </div>
-            <div class="project-stack">
-              <span class="stack-tag">React</span>
-              <span class="stack-tag">Django REST</span>
-              <span class="stack-tag">TailwindCSS</span>
-              <span class="stack-tag">SQLite</span>
-              <span class="stack-tag">JWT</span>
-              <span class="stack-tag">AI API</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://n-drive-app.netlify.app/"
-                target="_blank"
-                class="btn btn-primary"
-                >🌐 Live Demo</a
-              >
-              <a
-                href="https://github.com/aflah-pp/N-Drive"
-                target="_blank"
-                class="btn btn-secondary"
-                >⌥ GitHub</a
-              >
-            </div>
-          </div>
-
-          <div class="project-card reveal">
-            <div class="project-pin"></div>
-            <div class="project-type type-fullstack">
-              <i class="fa-solid fa-cart-shopping"></i> E-Commerce
-            </div>
-            <h3 class="project-title">Cartify</h3>
-            <p class="project-desc">
-              A complete e-commerce platform. Responsive product listings, cart
-              management, order processing, and media uploaded to Cloudinary.
-              The whole nine yards — not another todo app.
-            </p>
-            <div class="project-achievement">
-              <i class="fa-solid fa-cart-shopping"></i>
-              Full E-Commerce Flow, End-to-End
-            </div>
-            <div class="project-stack">
-              <span class="stack-tag">React</span>
-              <span class="stack-tag">Django REST</span>
-              <span class="stack-tag">SQLite</span>
-              <span class="stack-tag">Tailwind CSS</span>
-              <span class="stack-tag">Cloudinary</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://app-cartify.netlify.app/"
-                target="_blank"
-                class="btn btn-primary"
-                >🌐 Live Demo</a
-              >
-              <a
-                href="https://github.com/aflah-pp/Cartify"
-                target="_blank"
-                class="btn btn-secondary"
-                >⌥ GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="achievements">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-num">05 /</span>
-          <h2><span>By the Numbers</span></h2>
-        </div>
-        <div class="achievements-grid">
-          <div class="achievement-card reveal">
-            <div class="achievement-num">3+</div>
-            <div class="achievement-label">Full Stack Projects Shipped</div>
-          </div>
-          <div class="achievement-card reveal">
-            <div class="achievement-num">1</div>
-            <div class="achievement-label">
-              Production Freelance Client Delivered
-            </div>
-          </div>
-          <div class="achievement-card reveal">
-            <div class="achievement-num">6+</div>
-            <div class="achievement-label">Frameworks & Libraries Mastered</div>
-          </div>
-          <div class="achievement-card reveal">
-            <div class="achievement-num">2+</div>
-            <div class="achievement-label">Deployment Platforms Used</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-num">06 /</span>
-          <h2><span>Let's Talk</span></h2>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-card reveal">
-            <div class="tape tape-tl"></div>
-            <h3 class="contact-headline">
-              Let's build something <em>meaningful</em> together.
-            </h3>
-            <p class="contact-sub">
-              Open to full-time roles, freelance contracts, and interesting
-              collaborations. If you have a product idea or an open position,
-              let's talk.
-            </p>
-            <div class="contact-links">
-              <a href="mailto:aflahpp777@gmail.com" class="contact-link">
-                <div class="contact-link-icon icon-email">✉</div>
-                <div>
-                  <div class="contact-link-text">Email me</div>
-                  <div class="contact-link-sub">aflahpp777@gmail.com</div>
+        <div class="panel" data-panel="projects">
+          <div class="eyebrow">~/projects</div>
+          <div class="section-title">Projects</div>
+          <div class="section-sub">Selected full-stack builds, end to end.</div>
+          <div class="proj-grid">
+            <div class="proj-card">
+              <div class="proj-head">
+                <div class="proj-title">N-Drive</div>
+                <div class="proj-links">
+                  <a href="https://github.com/aflah-pp/N-Drive" target="_blank">code</a>
+                  <a href="https://n-drive-app.netlify.app/" target="_blank">demo</a>
                 </div>
-              </a>
-              <a
-                href="https://github.com/aflah-pp"
-                target="_blank"
-                class="contact-link"
-              >
-                <div class="contact-link-icon icon-github">⌥</div>
-                <div>
-                  <div class="contact-link-text">GitHub</div>
-                  <div class="contact-link-sub">github.com/aflah-pp</div>
+              </div>
+              <div class="proj-stack">React · Django REST · TailwindCSS · SQLite · JWT · AI API</div>
+              <div class="proj-desc">Cloud-like file manager for securely uploading, organizing, sharing and downloading files/folders — with an integrated AI chat assistant, image generation, JWT auth and mock subscription plans.</div>
+            </div>
+            <div class="proj-card">
+              <div class="proj-head">
+                <div class="proj-title">Cartify</div>
+                <div class="proj-links">
+                  <a href="https://github.com/aflah-pp/Cartify" target="_blank">code</a>
+                  <a href="https://app-cartify.netlify.app/" target="_blank">demo</a>
                 </div>
-              </a>
+              </div>
+              <div class="proj-stack">React · Django REST · SQLite · TailwindCSS · Cloudinary</div>
+              <div class="proj-desc">Full-stack e-commerce platform with product listing, cart management and order processing. Product media handled via Cloudinary uploads.</div>
             </div>
-          </div>
-
-          <div class="contact-form-side reveal">
-            <div>
-              <label class="hand-label" for="msg-name">Your name</label>
-              <input
-                type="text"
-                id="msg-name"
-                class="sketch-input"
-                placeholder="e.g. Riya from Zepto"
-              />
-            </div>
-            <div>
-              <label class="hand-label" for="msg-email">Your email</label>
-              <input
-                type="email"
-                id="msg-email"
-                class="sketch-input"
-                placeholder="riya@company.com"
-              />
-            </div>
-            <div>
-              <label class="hand-label" for="msg-body"
-                >What's on your mind?</label
-              >
-              <textarea
-                id="msg-body"
-                class="sketch-textarea"
-                placeholder="We have an opening / a project / an idea..."
-              ></textarea>
-            </div>
-            <button
-              class="btn btn-primary"
-              onclick="handleContact()"
-              style="width: 100%; justify-content: center; font-size: 18px"
-            >
-              ✉ Send Message
-            </button>
-            <p
-              id="form-feedback"
-              style="
-                font-family: &quot;Caveat&quot;, cursive;
-                font-size: 16px;
-                color: var(--green-dark);
-                text-align: center;
-                min-height: 24px;
-              "
-            ></p>
           </div>
         </div>
+
+        <div class="panel" data-panel="education">
+          <div class="eyebrow">README.md</div>
+          <div class="section-title">Education &amp; Achievements</div>
+          <div class="section-sub">Formal study, training, and wins along the way.</div>
+          <div class="two-col">
+            <div class="tl">
+              <div class="tl-item">
+                <div class="tl-head">
+                  <div><div class="tl-role">Bachelor of Commerce — Computer Application</div><div class="tl-org">NAHER Arts &amp; Science College, Kanhirode, Kannur</div></div>
+                  <div class="tl-date">Sept 2022 — Apr 2025</div>
+                </div>
+                <ul class="tl-list"><li>Relevant courses: Cost Accounting, Business Statistics, Tally, DBMS, IT for Business.</li></ul>
+              </div>
+              <div class="tl-item">
+                <div class="tl-head">
+                  <div><div class="tl-role">Full Stack Development Training</div><div class="tl-org">TALROP</div></div>
+                  <div class="tl-date">2023 — 2024</div>
+                </div>
+                <ul class="tl-list"><li>Intensive, certified training. Hands-on with HTML, CSS, JavaScript, React, Django REST Framework, PostgreSQL and Git across multiple real-world projects.</li></ul>
+              </div>
+            </div>
+            <div>
+              <span class="k mono" style="font-family:'JetBrains Mono', monospace; font-size:10.5px; color:var(--accent); text-transform:uppercase; letter-spacing:.08em; display:block; margin-bottom:10px;">Achievements</span>
+              <ul class="ach-list">
+                <li>Delivered a production-ready freelance app (TimeLogger).</li>
+                <li>Gained hands-on experience developing a real-world project end to end.</li>
+                <li>Gained hands-on experience deploying production-level applications.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" data-panel="contact">
+          <div class="eyebrow">contact --info</div>
+          <div class="section-title">Let's talk</div>
+          <div class="section-sub">Open to full-stack roles and freelance work.</div>
+          <div class="contact-links">
+            <a class="clink" href="mailto:aflahpp777@gmail.com">
+              <span class="ci"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+              <span class="cn">aflahpp777</span>
+            </a>
+            <a class="clink" href="https://github.com/aflah-pp" target="_blank">
+              <span class="ci"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.9 10.9 0 0 1 5.8 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.6.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.68.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg></span>
+              <span class="cn">aflah-pp</span>
+            </a>
+            <a class="clink" href="https://aflah-pp.netlify.app/" target="_blank">
+              <span class="ci"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg></span>
+              <span class="cn">aflah-pp.netlify.app</span>
+            </a>
+          </div>
+
+          <form class="cform" action="mailto:aflahpp777@gmail.com" method="post" enctype="text/plain">
+            <div><label>Name</label><input type="text" name="name" required></div>
+            <div><label>Email</label><input type="email" name="email" required></div>
+            <div><label>Message</label><textarea name="message" rows="4" required></textarea></div>
+            <button type="submit">Send message →</button>
+          </form>
+        </div>
+
       </div>
-    </section>
+    </div>
 
-    <footer>
-      <p>
-        Crafted with ☕ by <strong>Muhammed Aflah P P</strong> · Kerala, India ·
-        <span id="year"></span>
-      </p>
+    <div class="statusbar">
+      <div class="status-left">
+        <span class="status-branch">⎇ main</span>
+        <span>UTF-8</span>
+        <span id="statusTheme">dark-mode</span>
+      </div>
+      <div class="status-right">
+        <div class="ticker-wrap">
+          <span class="ticker">React · Django REST · PostgreSQL · TailwindCSS · ElectronJS &nbsp;&nbsp;·&nbsp;&nbsp; React · Django REST · PostgreSQL · TailwindCSS · ElectronJS &nbsp;&nbsp;·&nbsp;&nbsp;</span>
+        </div>
+        <span>Ln 1, Col 1</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-      <p class="footer-tagline">
-        Full-Stack Developer focused on building clean, scalable, and
-        user-friendly digital experiences.
-      </p>
+<div class="mobile-only">
+  <div class="m-topbar">
+    <div class="m-brand">
+      <div class="name">Muhammed Aflah P P</div>
+      <div class="role">FULL STACK DEVELOPER</div>
+    </div>
+    <div class="theme-toggle" id="themeToggleM">
+      <span id="toggleLabelM">DARK</span>
+      <span class="toggle-knob" id="toggleKnobM">☾</span>
+    </div>
+  </div>
 
-      <div class="footer-socials">
-        <a
-          href="https://github.com/aflah-pp"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-        >
-          <i class="fab fa-github"></i>
+  <div class="m-wrap">
+    <div class="m-hero">
+      <div class="eyebrow">whoami</div>
+      <h1 class="hero-title" style="font-size:22px;">Building clean, full-stack web apps that ship.</h1>
+      <p class="lede" style="font-size:13.5px;">Full Stack Developer working with <strong>React</strong>, <strong>Django REST Framework</strong> and <strong>PostgreSQL</strong>. B.Com in Computer Applications, full-stack certified via TALROP.</p>
+      <div class="hero-meta">
+        <span class="chip">React JS</span><span class="chip">Django REST</span><span class="chip">PostgreSQL</span><span class="chip">TailwindCSS</span>
+      </div>
+    </div>
+
+    <div class="m-section">
+      <div class="eyebrow">stack.json</div>
+      <div class="section-title">Skills</div>
+      <div class="m-skills-grid">
+        <div class="skill-row"><span class="k">Primary Stack</span><div class="tag-wrap"><span class="tag">ReactJS</span><span class="tag">Django REST Framework</span><span class="tag">PostgreSQL</span><span class="tag">TailwindCSS</span></div></div>
+        <div class="skill-row"><span class="k">Languages</span><div class="tag-wrap"><span class="tag">HTML5</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Python</span></div></div>
+        <div class="skill-row"><span class="k">Frameworks</span><div class="tag-wrap"><span class="tag">ReactJS</span><span class="tag">Django</span><span class="tag">React Native</span><span class="tag">Bootstrap</span><span class="tag">MUI</span><span class="tag">ElectronJS</span></div></div>
+        <div class="skill-row"><span class="k">Tools</span><div class="tag-wrap"><span class="tag">Git</span><span class="tag">VSCode</span><span class="tag">Postman</span><span class="tag">Figma</span><span class="tag">Render</span><span class="tag">Vercel</span><span class="tag">Netlify</span></div></div>
+        <div class="skill-row"><span class="k">Databases</span><div class="tag-wrap"><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span></div></div>
+        <div class="skill-row"><span class="k">Other</span><div class="tag-wrap"><span class="tag">Problem-Solving</span><span class="tag">Critical Thinking</span><span class="tag">Adaptability</span><span class="tag">Teamwork</span></div></div>
+      </div>
+    </div>
+
+    <div class="m-section">
+      <div class="eyebrow">git log --experience</div>
+      <div class="section-title">Experience</div>
+      <div class="tl">
+        <div class="tl-item">
+          <div class="tl-head"><div><div class="tl-role">Full Stack Developer</div><div class="tl-org">Yuai Soft Solutions</div></div><div class="tl-date">Dec 2025 — Present</div></div>
+          <ul class="tl-list">
+            <li>Architecting frontend UI components and backend services within an Agile environment.</li>
+            <li>Shipping code, troubleshooting production issues, participating in peer code reviews.</li>
+            <li>Consistent bug fixes, performance monitoring, and code refactoring.</li>
+            <li>Implementing RESTful services and modern libraries for future-proof features.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-head"><div><div class="tl-role">TimeLogger</div><div class="tl-org">Freelance Project</div></div><div class="tl-date">ReactJS · ElectronJS · Django</div></div>
+          <ul class="tl-list">
+            <li>Cross-platform time tracking app for a freelance client — sessions &amp; productivity stats.</li>
+            <li>ReactJS frontend with real-time state management.</li>
+            <li>Converted to desktop app with ElectronJS; automated pipelines via GitHub Actions.</li>
+            <li>Django backend deployed on Render, integrated with Supabase; full client handover.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-section">
+      <div class="eyebrow">~/projects</div>
+      <div class="section-title">Projects</div>
+      <div class="m-proj-grid">
+        <div class="proj-card">
+          <div class="proj-head"><div class="proj-title">N-Drive</div>
+            <div class="proj-links"><a href="https://github.com/aflah-pp/N-Drive" target="_blank">code</a><a href="https://n-drive-app.netlify.app/" target="_blank">demo</a></div>
+          </div>
+          <div class="proj-stack">React · Django REST · TailwindCSS · SQLite · JWT · AI API</div>
+          <div class="proj-desc">Cloud-like file manager — secure upload/organize/share/download, AI chat + image generation, JWT auth, mock subscriptions.</div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-head"><div class="proj-title">Cartify</div>
+            <div class="proj-links"><a href="https://github.com/aflah-pp/Cartify" target="_blank">code</a><a href="https://app-cartify.netlify.app/" target="_blank">demo</a></div>
+          </div>
+          <div class="proj-stack">React · Django REST · SQLite · TailwindCSS · Cloudinary</div>
+          <div class="proj-desc">Full-stack e-commerce platform — product listing, cart management, order processing, Cloudinary media.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-section">
+      <div class="eyebrow">README.md</div>
+      <div class="section-title">Education &amp; Achievements</div>
+      <div class="m-two-col">
+        <div class="tl">
+          <div class="tl-item">
+            <div class="tl-head"><div><div class="tl-role">B.Com — Computer Application</div><div class="tl-org">NAHER Arts &amp; Science College</div></div><div class="tl-date">2022—2025</div></div>
+            <ul class="tl-list"><li>Cost Accounting, Business Statistics, Tally, DBMS, IT for Business.</li></ul>
+          </div>
+          <div class="tl-item">
+            <div class="tl-head"><div><div class="tl-role">Full Stack Training</div><div class="tl-org">TALROP</div></div><div class="tl-date">2023—2024</div></div>
+            <ul class="tl-list"><li>Certified, hands-on training across multiple real-world projects.</li></ul>
+          </div>
+        </div>
+        <div>
+          <span class="k">Achievements</span>
+          <ul class="ach-list" style="margin-top:10px;">
+            <li>Delivered a production-ready freelance app (TimeLogger).</li>
+            <li>Gained hands-on experience on a real-world project.</li>
+            <li>Gained hands-on experience deploying production apps.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-section">
+      <div class="eyebrow">contact --info</div>
+      <div class="section-title">Let's talk</div>
+      <div class="contact-links">
+        <a class="clink" href="mailto:aflahpp777@gmail.com">
+          <span class="ci"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+          <span class="cn">aflahpp777</span>
         </a>
-
-        <a
-          href="https://linkedin.com/in/muhammed-aflahpp"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <i class="fab fa-linkedin"></i>
+        <a class="clink" href="https://github.com/aflah-pp" target="_blank">
+          <span class="ci"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.9 10.9 0 0 1 5.8 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.6.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.68.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg></span>
+          <span class="cn">aflah-pp</span>
         </a>
-
-        <a
-          href="https://instagram.com/afl_4h"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >
-          <i class="fab fa-instagram"></i>
+        <a class="clink" href="https://aflah-pp.netlify.app/" target="_blank">
+          <span class="ci"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg></span>
+          <span class="cn">aflah-pp.netlify.app</span>
         </a>
       </div>
-    </footer>
 
-    <script src="port-folio.js"></script>
-  </body>
+      <form class="cform" action="mailto:aflahpp777@gmail.com" method="post" enctype="text/plain">
+        <div><label>Name</label><input type="text" name="name" required></div>
+        <div><label>Email</label><input type="email" name="email" required></div>
+        <div><label>Message</label><textarea name="message" rows="4" required></textarea></div>
+        <button type="submit">Send message →</button>
+      </form>
+    </div>
+
+    <div class="m-footer">© 2026 Muhammed Aflah P P — built with React, Django &amp; coffee</div>
+  </div>
+</div>
+
+<script src="port-folio.js">
+ 
+</script>
+
+</body>
 </html>
