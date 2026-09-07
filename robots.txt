@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aflah-pp.github.io/sitemap.xml
+Sitemap: https://aflah.site/sitemap.xml
